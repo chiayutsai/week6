@@ -42,7 +42,7 @@
             <a class="nav-link text-lg  text-center   mr-0  mr-md-9 py-5" href="login.html"><span
                 class="material-icons d-none d-md-inline mr-1">
                 person
-              </span>Log in</a>
+              </span> Log in</a>
           </li>
           <li class="nav-item order-1 order-md-2">
             <a class="nav-link text-lg  text-center  mr-0  mr-md-9 py-5" href="#"><span
@@ -60,7 +60,7 @@
           </li>
 
           <li class="nav-item d-none d-md-block  order-5">
-            <a class="nav-link text-lg  text-center py-5" hre py-5f="#"><span class="material-icons  mr-1">
+            <a class="nav-link text-lg  text-center py-5" href="#"><span class="material-icons  mr-1">
                 shopping_cart
               </span>Cart(3)</a>
           </li>
@@ -89,22 +89,23 @@
         </div>
         <div class="col-12 col-md-4 mb-16 mb-md-0">
             <h3 class="text-3xl mb-4">Log in</h3>
-            <form>
+            <form class="js-login-form">
                 <div class="form-group">
                     <label for="account">帳號</label>
-                    <input type="email" class="form-control" id="account" aria-describedby="emailHelp"
-                        placeholder="email@example.com">
+                    <input type="email" class="form-control js-account" id="account" name="account"
+                        aria-describedby="emailHelp" placeholder="email@example.com" required>
 
                 </div>
                 <div class="form-group mb-10">
                     <label for="Password">密碼</label>
-                    <input type="password" class="form-control" id="Password" placeholder="Password">
+                    <input type="password" name="password" class="form-control js-password" id="Password"
+                        placeholder="Password" required>
                 </div>
                 <div class="d-flex justify-content-between align-items-center">
                     <a href="">忘記密碼</a>
                     <div class="d-flex">
                         <button class="btn border-primary text-primary hover__bg--primary rounded mr-3">註冊</button>
-                        <button type="submit" class="btn btn-primary rounded">登入</button>
+                        <button type="submit" class="btn btn-primary rounded js-login-click">登入</button>
                     </div>
                 </div>
             </form>
@@ -120,15 +121,17 @@
           <p class='text-xs text-mb-sm text-white'>© 2020. All Rights Reserved.</p>
         </div>
         <ul class=" d-none d-md-flex">
-          <li class="mr-10"><a class="footer__link text-white text-lg py-8" href="shop.html">Product</a></li>
-          <li class="mr-10"><a class="footer__link text-white text-lg  py-8" href="">Blog</a></li>
-          <li><a class="footer__link text-white text-lg  py-8" href="">Contact</a></li>
+          <li class="mr-10"><a class="hover__opacity text-white text-lg py-8" href="shop.html">Product</a></li>
+          <li class="mr-10"><a class="hover__opacity text-white text-lg  py-8" href="">Blog</a></li>
+          <li><a class="hover__opacity text-white text-lg  py-8" href="">Contact</a></li>
         </ul>
       </div>
 
     </div>
   </footer>
   <script src="./assets/js/vendors.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
   <script src="./assets/js/bundle.js"></script>
   <script src="./assets/js/bootstrap.js"></script>
   <script src="./assets/js/all.js"></script>
